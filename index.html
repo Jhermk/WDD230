@@ -3,9 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TEST</title>
+    <meta name="Author" content="Hermann F. J Koffi">
+    <meta name="description" content="WDD 230 Web Frontend Development by Hermann F. J Koffi | my course assignment portal page. ">
+    <title>Hermann F. J Koffi - WDD 230 - Web Frontend Development</title>
+    <link rel="stylesheet" href="/styles/base.css">
+    <link rel="stylesheet" href="/styles/larger.css">
+    <link rel="shortcut icon" href="/images/photo.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Roboto+Condensed&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h1>Testing....</h1>
+    <header>
+        <img src="/images/photo.png" alt="My photo">
+        <h1>Hermann F. J Koffi</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Chamber</a></li>
+            <li><a href="#">Site Plan</a></li>
+            <li><a href="#">Form</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h2>WDD 230: Web Frontend Development</h2>
+        <div class="wrapper">
+            <section class="card">
+                <h3>Learning Activities</h3>
+                <ul>
+                    <li><a href="/week01/holygrail.html">Week01: Layout</a> | <a href="/week01/media-query.html">Media Query</a>  | <a href="">JS Pen</a> | <a href="/week01/chamber-site-plan.html">W01: The Chamber Site Plan</a></li>
+                    <li><a href="">Week02: link</a></li>
+                    <li><a href="">Week03: link</a></li>
+                    <li><a href="">Week04: link</a></li>
+                    <li><a href="">Week05: link</a></li>
+                    <li><a href="">Week06: link</a></li>
+                </ul>
+            </section>
+            <section class="card">
+                <h3>Information</h3>
+                <span id="country">Country:</span><br>
+                <span id="weather">weather:</span><br>
+                <span id="Page-visit">Page Visited Time:</span>
+            </section>
+        </div>
+        
+    </main>
+    <footer>
+        <p>&copy; <span id="year"></span> | Hermann F. J Koffi | Cote d'ivoire <img class="flag" src="/images/flag.png" alt="Cote D'ivoire flag"> </p>
+        <p id="lastModified"></p>
+    </footer>
+    
+<script defer src="/scripts/getDates.js"></script>
 </body>
 </html>

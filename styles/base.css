@@ -1,0 +1,104 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+    box-sizing: border-box;
+}
+
+/* header */
+
+
+header {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
+    padding: 10px;
+    background-color: rgba(255, 160, 35, 0.897);
+    border-radius: 10px;
+}
+
+header img {
+    width: 86px;
+    border-radius: 50px;
+}
+
+header h1 {
+    color: #fff;
+}
+
+/* nav-bar */
+
+nav ul li a {
+    display: block;
+    padding: 1rem;
+    color: #000;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+nav ul li:hover a {
+    color: rgba(243, 155, 39, 0.897);
+    margin-left: -6px;
+    transition: 0.4s ease-in-out;
+}
+
+nav ul>li:first-child a {
+    background-color: rgb(255, 255, 255);
+    /* You can set the background color for the first <li> here */
+    color: rgba(243, 155, 39, 0.897);
+
+}
+
+/* Main */
+
+main {
+    padding: 15px;
+}
+
+main h2 {
+    border-bottom: 2px solid #cccccc3f;
+    background-color: orange;
+    color: #000;
+    padding: 5px;
+}
+
+.card {
+    border: 2px solid #CCC;
+    padding: 20px 10px;
+    color: rgba(77, 241, 63, 0.897);
+    border-radius: 10px;
+}
+
+
+.card h3 {
+    color: #000;
+}
+
+.card ul li {
+    list-style-type: none;
+    margin: 15px 0;
+}
+
+.card ul li a {
+    color: rgba(77, 241, 63, 0.897);
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+/* Footer */
+
+footer p {
+    font-size: 17px;
+}
+
+footer .flag {
+    width: 18px;
+
+}
+
+footer {
+    background-color: rgba(255, 160, 35, 0.897);
+    padding: 40px;
+    border-radius: 10px;
+}

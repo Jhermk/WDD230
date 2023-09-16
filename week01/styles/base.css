@@ -1,0 +1,106 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif; 
+    font-family: 'Roboto Serif', serif;
+    color: #435334;
+    font-weight: 600;
+}
+  /* Color Selection*/
+  :root {
+    --primary-bg-color: #FAF5E4; 
+    --secondary-accent-color: #fff; 
+    --bacground-color: #e4daba; 
+    --asset-color: #e6bd06b6; 
+}
+/* header */
+
+header{
+    background-color: #FAF5E4;
+    border-radius: 4px;
+}
+
+.header{
+    display: grid;
+    align-items: center;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1rem;
+    padding: 40px;
+}
+
+.header h1{
+    font-size: 22px;
+}
+.my-name{
+    font-size: 35px;
+    font-weight: bold;
+}
+
+/* nav-bar */
+
+nav ul li{
+    padding: 9px 0;
+}
+nav ul li a{
+    display: block;
+    padding: 3px 40px;
+    text-decoration: none;
+    margin-bottom: 12px;
+}
+
+/* main */
+
+main{
+    padding: 40px;
+}
+main h2{
+    text-align: center;
+}
+
+main p{
+    margin: 20px 0;
+}
+
+.wireframe{
+    width: 100%;
+    margin-top: 30px;
+}
+    /* Style for the color palette section */
+    .color-table {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    
+    .color-table th,
+    .color-table td {
+        padding: 10px;
+        text-align: center;
+    }
+    
+    .color-table th {
+        background-color: #FAF5E4;
+    }
+    
+    .color-table td:nth-child(1) {
+        background-color: var(--primary-bg-color);
+    }
+    
+    .color-table td:nth-child(2) {
+        background-color: var(--secondary-accent-color);
+    }
+    
+    .color-table td:nth-child(3) {
+        background-color: var(--bacground-color);
+    }
+    
+    .color-table td:nth-child(4) {
+        background-color: var(--asset-color);
+    }
+
+/* footer */
+
+footer{
+    background-color: #FAF5E4;
+    padding: 40px;
+}
