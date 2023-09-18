@@ -1,6 +1,18 @@
-@media screen and (min-width: 64.81rem){
-    nav ul{
+@media screen and (min-width: 64.81rem) {
+    nav ul {
         display: flex;
         list-style: none;
     }
+
+    .section {
+        display: flex;
+        align-items: center;
+    }
+
+    .color {
+        width: 100%;
+        margin: 0 auto;
+
+    }
+
 }
