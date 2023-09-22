@@ -1,11 +1,31 @@
 @media screen and (min-width: 500px) {
-    body{
+    body {
         padding: 40px;
     }
-    nav ul{
+
+    nav ul {
         display: flex;
         list-style-type: none;
-    
+        flex-wrap: wrap;
+
+    }
+
+    .navigation {
+        display: flex;
+    }
+
+    .navigation li {
+        display: block;
+        /* change state in small view */
+        margin: 0 30px;
+    }
+
+    .navigation a {
+        text-align: center;
+    }
+
+    #menu {
+        display: none;
     }
 
     .wrapper {
@@ -14,5 +34,5 @@
         padding: 20px 0;
         gap: 1rem;
     }
-    
+
 }

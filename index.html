@@ -10,7 +10,7 @@
     <meta property="og:image" content="https://i.ytimg.com/vi/ptLXavw6CZc/maxresdefault.jpg">
     <meta property="og:url" content="https://jhermk.github.io/wdd230">
     <title>Hermann F. J Koffi - WDD 230 - Web Frontend Development</title>
-    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="/wdd230/styles/normalize.css">
     <link rel="stylesheet" href="/wdd230/styles/base.css">
     <link rel="stylesheet" href="/wdd230/styles/larger.css">
     <link rel="icon" href="/wdd230/images/favicon.ico">
@@ -22,12 +22,16 @@
     <header>
         <img src="/wdd230/images/photo.png" alt="My photo">
         <h1>Hermann F. J Koffi</h1>
+        <div id="mode">
+            ☑️
+        </div>
     </header>
+    <span id="menu" href="#"></span>
     <nav>
-        <ul>
+        <ul class="navigation">
             <li><a href="#">Home</a></li>
-            <li><a href="#">Chamber</a></li>
-            <li><a href="/wdd230/week01/chamber-site-plan.html">Site Plan</a></li>
+            <li><a href="#">chamber</a></li>
+            <li><a href="/wdd230/week01/chamber-site-plan.html">Site-Plan</a></li>
             <li><a href="#">Form</a></li>
         </ul>
     </nav>
@@ -60,5 +64,7 @@
     </footer>
     
 <script defer src="/wdd230/scripts/getDates.js"></script>
+<script defer src="/wdd230/scripts/hamburger.js"></script>
+<script defer src="/wdd230/scripts/dark.js"></script>
 </body>
 </html>

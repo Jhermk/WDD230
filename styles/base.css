@@ -8,14 +8,12 @@
 
 /* header */
 
-
 header {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+    grid-template-columns: repeat(3, 1fr);
     align-items: center;
     padding: 10px;
     background-color: rgba(255, 160, 35, 0.897);
-    border-radius: 10px;
 }
 
 header img {
@@ -27,15 +25,21 @@ header h1 {
     color: #fff;
 }
 
+
+/* Dark mode button */
+
+#mode {
+    text-align: right;
+    top: 1rem;
+    right: 1rem;
+    font-size: 3rem;
+    cursor: pointer;
+
+}
+
+
 /* nav-bar */
 
-nav ul li a {
-    display: block;
-    padding: 1rem;
-    color: #000;
-    text-decoration: none;
-    font-size: 20px;
-}
 
 nav ul li:hover a {
     color: rgba(243, 155, 39, 0.897);
@@ -45,16 +49,61 @@ nav ul li:hover a {
 
 nav ul>li:first-child a {
     background-color: rgb(255, 255, 255);
-    /* You can set the background color for the first <li> here */
     color: rgba(243, 155, 39, 0.897);
 
 }
+
+#menu {
+    display: block;
+    font-size: 2rem;
+    font-weight: 700;
+    text-decoration: none;
+    padding: .5rem .75rem;
+    color: #000;
+}
+
+#menu::before {
+    content: "≡";
+}
+
+.navigation {
+    list-style: none;
+    margin: 0 auto;
+}
+
+.navigation li {
+    display: none;
+
+}
+
+.navigation a {
+    display: block;
+    text-align: left;
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    transition: 0.5s;
+    font-size: clamp(1rem, 2vmin, 1.5rem);
+    padding: 20px 0;
+}
+
+.show li {
+    display: block;
+    margin: 20px;
+}
+
+
+#menu.show::before {
+    content: "X";
+}
+
 
 /* Main */
 
 main {
     padding: 15px;
 }
+
 
 main h2 {
     border-bottom: 2px solid #cccccc3f;
@@ -64,17 +113,12 @@ main h2 {
 }
 
 .card {
-    border: 2px solid #CCC;
+    border: 2px solid #000;
     padding: 20px 10px;
-    color: rgba(77, 241, 63, 0.897);
     border-radius: 10px;
     margin: 10px 0;
-    
-}
-
-
-.card h3 {
-    color: #000;
+    background-color: #fff;
+    color: #333;
 }
 
 .card ul li {
@@ -83,10 +127,11 @@ main h2 {
 }
 
 .card ul li a {
-    color: rgba(77, 241, 63, 0.897);
     font-size: 18px;
     letter-spacing: 1px;
+    color: #000;
 }
+
 
 /* Footer */
 
