@@ -1,4 +1,5 @@
 @media screen and (min-width: 500px) {
+
     body {
         padding: 40px;
     }
@@ -6,7 +7,6 @@
     nav ul {
         display: flex;
         list-style-type: none;
-        flex-wrap: wrap;
 
     }
 
