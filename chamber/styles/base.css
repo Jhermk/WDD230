@@ -48,6 +48,11 @@
 
 }
 
+.header h1{
+    font-size: 30px;
+    padding: 35px;
+}
+
 .logo {
     max-width: 250px;
     height: auto;
