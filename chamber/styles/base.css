@@ -42,12 +42,14 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
-    padding: 1rem;
+   
 
 }
 
-.header h1 {
-    font-size: 20px;
+.logo {
+    max-width: 250px;
+    height: auto;
+    filter: grayscale(50%);
 }
 
 /* Dark mode button */
