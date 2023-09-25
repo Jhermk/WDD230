@@ -62,11 +62,11 @@
 /* Dark mode button */
 
 #mode {
-    top: -10.5rem;
-    right: 1rem;
+    top: 0;
+    left: 2rem;
     font-size: 2rem;
     cursor: pointer;
-    position: relative;
+    position: absolute;
 }
 
 #date {
