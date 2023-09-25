@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="Author" content="Hermann F. J Koffi | WDD230-FALL-Chamber-of-Commerce-Website-Project">
+    <meta name="description" content="Welcome on board to the Official Website of the MeetConnect Chamber of commerce website">
+    <meta property="og:title" content="MeetConnect Chamber of Commerce">
+    <meta property="og:description" content="Connecting businesses and fostering growth in our community. Join us today!">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/4/48/United_States_Chamber_of_Commerce_Building.jpg">
+    <meta property="og:url" content="/wdd230/chamber/index.html">
+    <title>The MeetConnect Chamber Of Commerce Official Website</title>
+    <link rel="stylesheet" href="/wdd230/chamber/styles/normalize.css">
+    <link rel="stylesheet" href="/wdd230/chamber/styles/base.css">
+    <link rel="stylesheet" href="/wdd230/chamber/styles/larger.css">
+    <link rel="icon" href="/wdd230/chamber/images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Roboto+Serif:opsz,wght@8..144,200&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div id="modal" class="modal">
+            <div class="modal-content">
+                <span class="close-btn" id="closeModalBtn">&times;</span>
+                <h2>Come Join Us!</h2>
+                <p>Join our live meeting on Tuesday or Wednesday.</p>
+            </div>
+        </div>
+        <div class="header">
+            <h1>MeetConnect <br> Chamber of commerce <br> Connecting Commerce Community</h1>
+            <span id="menu" href="#"></span>
+            <div id="mode">
+                ☑️
+            </div>
+
+        </div>
+    </header>
+    <p id="date"></p>
+    <nav>
+        <ul class="navigation">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Discover</a></li>
+            <li><a href="#">Directory</a></li>
+            <li><a href="#">Join</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </nav>
+    <main>
+        <div class="wrapper">
+            <div class="event">
+                <div class="event-time">
+                    <span class="day">Monday</span>
+                    <span class="date">October 3</span>
+                    <span class="time">2:00 PM - 4:00 PM</span>
+                </div>
+                <div class="event-details">
+                    <h2 class="event-title">Team Meeting</h2>
+                    <p class="event-description">Discuss project updates and plan for the week.</p>
+                    <p class="event-location">Location: Conference Room 1</p>
+                </div>
+            </div>
+            <div class="hero">
+                <button>JOIN US NOW</button>
+            </div>
+            <div class="weather">Weather</div>
+            <div class="news">News</div>
+            <section class="spotlight">Spotlight
+                <div class="spotlight1">Spotlight 1</div>
+                <div class="spotlight2">Spotlight 2</div>
+                <div class="spotlight3">Spotlight 3</div>
+            </section>
+            
+        </div>
+
+    </main>
+    <footer>
+        <p>&copy; <span id="year"></span> | MeetConnect Chamber of Commerce | WDD230 Hermann F. J Koffi </p>
+        <p id="lastModified"></p>
+    </footer>
+  
+<script defer src="/wdd230/chamber/scripts/getDates.js"></script>
+<script defer src="/wdd230/chamber/scripts/hamburger.js"></script>
+<script defer src="/wdd230/chamber/scripts/modal.js"></script>
+<script defer src="/wdd230/chamber/scripts/dark.js"></script>
+<script defer src="/wdd230/chamber/scripts/hamburger.js"></script>
+</body>
+</html>
