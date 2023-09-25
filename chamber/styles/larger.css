@@ -1,5 +1,11 @@
 @media screen and (min-width: 500px) {
 
+    .logo {
+        width: 250px;
+        height: auto;
+        filter: grayscale(50%);
+    }
+
     nav ul {
         display: flex;
         list-style-type: none;
