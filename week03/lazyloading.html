@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Hermann F. J Koffi">
+    <meta name="description" content="Lazy loading of images by Hermann F. J Koffi">
+    <title>Lazy Loading of Images | WDD230 Fall Semester</title>
+    <link rel="stylesheet" href="/wdd230/week03/styles/lazyloding.css">
+    <script defer src="/wdd230/week03/scripts/getDates.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Lazy loading</h1>
+    </header>
+    <main>
+        <figure>
+            <img src="https://images.unsplash.com/photo-1484406566174-9da000fda645?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1378&q=80" alt="Deer" loading="lazy" width="400" height="600">
+            <figcaption>Deer</figcaption>
+        </figure>
+        <figure>
+            <img src="https://images.unsplash.com/photo-1603483080228-04f2313d9f10?ixlib=rb-4.0.3&ixid=M3xMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1530&q=80" alt="Elephant" loading="lazy" width="400" height="600">
+            <figcaption>Elephant</figcaption>
+        </figure>
+        <figure>
+            <img src="https://images.unsplash.com/photo-1511208687438-2c5a5abb810c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1464&q=80" alt="Lion" loading="lazy" width="400" height="600">
+            <figcaption>Lion</figcaption>
+        </figure>
+        <figure>
+            <img src="https://images.unsplash.com/photo-1695303883050-c8a75e448b5a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" alt="Buffalo" loading="lazy" width="400" height="600">
+            <figcaption>Buffalo</figcaption>
+        </figure>
+        <figure>
+            <img src="https://images.unsplash.com/photo-1526319238109-524eecb9b913?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1424&q=80" alt="Zebra" loading="lazy" width="400" height="600">
+            <figcaption>Zebra</figcaption>
+        </figure>
+        <figure>
+            <img src="https://images.unsplash.com/photo-1574870111867-089730e5a72b?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" alt="Giraffe" loading="lazy" width="400" height="600">
+            <figcaption>Giraffe</figcaption>
+        </figure>
+    </main>
+    <footer>
+        <p>&copy; <span id="year"></span> | Hermann F. J Koffi |</p>
+        <p id="lastModified"></p>
+    </footer>
+    <script defer src="/wdd230/week03/scripts/getDates.js"></script>
+</body>
+</html>
