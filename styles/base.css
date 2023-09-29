@@ -103,30 +103,56 @@ nav ul>li:first-child a {
     height: auto;
 }
 
-.overlay {
-    position: absolute;
-    top: 260px;
-    left: 0;
-    right: 0;
-    /* Adjust right to control the width of the overlay */
-    color: white;
-    padding: 10px;
-    text-align: center;
-    /* Center the text horizontally */
-    white-space: nowrap;
-    /* Prevent text from wrapping */
-    overflow: hidden;
-    /* Hide any overflow text */
+/* Style the hero container */
+.hero {
+    position: relative;
+    /* Make it a positioning context for its children */
+    max-width: 100%;
+    /* Ensure it doesn't exceed its container's width */
 }
 
+/* Style the hero image */
+.hero img {
+    width: 100%;
+    /* Make the image responsive */
+    height: auto;
+    /* Preserve aspect ratio */
+    display: block;
+    /* Remove any extra space below the image */
+}
+
+/* Style the overlay div */
+.overlay {
+    position: absolute;
+    /* Position it relative to the .hero container */
+    top: 50%;
+    /* Position it vertically in the middle */
+    left: 50%;
+    /* Position it horizontally in the middle */
+    transform: translate(-50%, -50%);
+    /* Center it exactly */
+    background-color: rgba(0, 0, 0, 0.6);
+    /* Semi-transparent background color */
+    color: white;
+    /* Text color on the overlay */
+    padding: 10px;
+    /* Add padding for better readability */
+    text-align: center;
+    /* Center text horizontally */
+    border-radius: 5px;
+    /* Add rounded corners */
+}
+
+/* Style the text inside the overlay */
 .overlay p {
     margin: 0;
-    display: inline-block;
-    /* Make the <p> behave like an inline element */
-    background: rgba(0, 0, 0, 0.5);
-    padding: 5px 10px;
-    /* Adjust padding as needed */
+    /* Remove default margin for better alignment */
+    font-size: 24px;
+    /* Adjust the font size as needed */
+    font-weight: bold;
+    /* Make the text bold */
 }
+
 
 
 
