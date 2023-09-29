@@ -97,6 +97,40 @@ nav ul>li:first-child a {
 
 /* Main */
 
+.hero img,
+#map-container iframe {
+    width: 100%;
+    height: auto;
+}
+
+.overlay {
+    position: absolute;
+    top: 210px;
+    left: 0;
+    right: 0;
+    /* Adjust right to control the width of the overlay */
+    color: white;
+    padding: 10px;
+    text-align: center;
+    /* Center the text horizontally */
+    white-space: nowrap;
+    /* Prevent text from wrapping */
+    overflow: hidden;
+    /* Hide any overflow text */
+}
+
+.overlay p {
+    margin: 0;
+    display: inline-block;
+    /* Make the <p> behave like an inline element */
+    background: rgba(0, 0, 0, 0.5);
+    padding: 5px 10px;
+    /* Adjust padding as needed */
+}
+
+
+
+
 main {
     padding: 15px;
 }

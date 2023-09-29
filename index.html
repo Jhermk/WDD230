@@ -20,7 +20,7 @@
 </head>
 <body>
     <header>
-        <img src="/wdd230/images/photo.png" alt="My photo">
+        <img src="/wdd230/images/photo.webp" alt="My photo">
         <h1>Hermann F. J Koffi</h1>
         <div id="mode">
             ☑️
@@ -36,6 +36,15 @@
         </ul>
     </nav>
     <main>
+        <div class="hero">
+            <picture>
+                <source srcset="/wdd230/images/hero-small.webp" media="(max-width: 400px)">
+                <img loading="lazy" src="/wdd230/images/hero-medium.webp" alt="Rome Italy Temple" width="960" height="480">
+            </picture>
+            <div class="overlay">
+                <p>Rome Italy Temple</p>
+              </div>
+        </div>
         <h2>WDD 230: Web Frontend Development</h2>
         <div class="wrapper">
             <section class="card">
@@ -43,7 +52,7 @@
                 <ul>
                     <li><a href="/wdd230/week01/holygrail.html">Week01: Layout</a> | <a href="/wdd230/week01/media-query.html">Media Query</a>  | <a target="_blank" href="https://codepen.io/jhermk/pen/abPLMGX">JS Pen</a></li>
                     <li><a href="/wdd230/week02/design.html">Week02: Design</a></li>
-                    <li><a href="/wdd230/week03/images/landscape.webp">Week03: Webp</a> | <a href="/wdd230/week03/lazyloading.html">lazyload </a> | <a href="/wdd230/week03/responsive-images.html">Responsive Images: srcset</a> | <a href="/wdd230/week03/boom/index.html">BOM</a></li>
+                    <li><a href="/wdd230/week03/images/landscape.webp">Week03: Webp</a> | <a href="/wdd230/week03/lazyloading.html">lazyloading </a> | <a href="/wdd230/week03/responsive-images.html">srcset</a> | <a href="/wdd230/week03/boom/index.html">BOM</a></li>
                     <li><a href="">Week04: link</a></li>
                     <li><a href="">Week05: link</a></li>
                     <li><a href="">Week06: link</a></li>
@@ -56,10 +65,13 @@
                 <span id="Page-visit">Page Visited Time:</span>
             </section>
         </div>
+        <div id="map-container">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2966.380096431096!2d12.54223027525294!3d41.97064835961581!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x132f643086c21e99%3A0xcb6509821c71b70c!2sRome%20Italy%20Temple!5e0!3m2!1sen!2sci!4v1696001252809!5m2!1sen!2sci" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
         
     </main>
     <footer>
-        <p>&copy; <span id="year"></span> | Hermann F. J Koffi | Cote d'ivoire <img class="flag" src="/wdd230/images/flag.png" alt="Cote D'ivoire flag"> </p>
+        <p>&copy; <span id="year"></span> | Hermann F. J Koffi | Cote d'ivoire <img class="flag" src="/wdd230/images/flag.webp" alt="Cote D'ivoire flag"> </p>
         <p id="lastModified"></p>
     </footer>
     
