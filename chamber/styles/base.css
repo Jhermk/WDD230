@@ -44,11 +44,11 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
-   
+
 
 }
 
-.header h1{
+.header h1 {
     font-size: 30px;
     padding: 40px;
 }
@@ -244,6 +244,77 @@ button:hover {
 #year {
     font-weight: 900;
 }
+
+/* Discover page CSS */
+
+
+.discover-section {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 30px;
+    padding: 20px;
+    margin: 0 auto;
+    font-size: 20px;
+}
+
+.sidebar h2 {
+    font-size: 28px;
+    margin-top: 0;
+}
+
+.sidebar h3 {
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.sidebar p {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/* List Styles */
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin-bottom: 10px;
+}
+
+.discover picture img {
+    width: 100%;
+    height: auto;
+    transition: opacity 0.3s ease-in-out;
+    border: 4px double rgb(243, 157, 157);
+}
+
+
+/* Add a hover effect to change image opacity on hover */
+.discover picture img:hover {
+    opacity: 0.7;
+}
+
+figure figcaption {
+    font-style: oblique;
+    font-weight: bolder;
+    font-size: 20px;
+    padding: 18px 0;
+    text-align: center;
+    letter-spacing: 15px;
+}
+
+.user-info {
+    margin-top: 90px;
+    text-align: right;
+}
+
+/* end */
+
+
+
+
 
 footer p {
     font-size: 19px;

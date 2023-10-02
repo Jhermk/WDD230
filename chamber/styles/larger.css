@@ -1,4 +1,4 @@
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 600px) {
 
     .logo {
         width: 250px;
@@ -80,5 +80,21 @@
         height: 20vh;
         margin: 10px;
     }
+
+    .discover-section {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .sidebar {
+        line-height: 40px;
+        width: 80%;
+    }
+
+    .discover picture img {
+        margin-top: 50px;
+    }
+
+
+
 
 }
