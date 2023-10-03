@@ -1,6 +1,6 @@
 // Function to update visit information
 function updateVisitInfo() {
-  const lastVisit = localStorage.getItem('lastVisit');
+  let lastVisit = localStorage.getItem('lastVisit');
   const currentDate = Date.now();
   const visitsElement = document.getElementById('visits');
   const lastVisitedElement = document.getElementById('lastVisited');
@@ -25,7 +25,7 @@ function updateVisitInfo() {
   }
 
   // Update the visit information
-  const totalVisits = (parseInt(localStorage.getItem('visits'), 10) || 0) + 1;
+  let totalVisits = (parseInt(localStorage.getItem('visits'), 10) || 0) + 1;
   visitsElement.textContent = totalVisits;
   localStorage.setItem('visits', totalVisits);
 
@@ -33,7 +33,8 @@ function updateVisitInfo() {
   lastVisitedElement.textContent = lastVisitedDate;
 
   // Update the last visit date
-  localStorage.setItem('lastVisit', currentDate.toString());
+  lastVisit = currentDate.toString();
+  localStorage.setItem('lastVisit', lastVisit);
 }
 
 // Call the function when the page loads
