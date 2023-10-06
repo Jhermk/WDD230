@@ -57,14 +57,14 @@
         
             <fieldset>
                 <legend>Contact Information</legend>
-        
                 <label class="top" for="email">Email*:</label>
                 <input type="email" id="email" name="email" required pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" title="Please enter a valid email address" aria-describedby="email-help" oninput="validateEmail(this)" onblur="validateEmail(this)">
                 <span id="email-help" class="form-help">Please enter a valid email address from byui.edu</span>
-                <label class="top" for="email">Retype Email*:</label>
-                <input type="email2" id="email" name="email2" required pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" title="Please enter a valid email address" aria-describedby="email-help" oninput="validateEmail(this)" onblur="validateEmail(this)">
-                <span>Confirm Email</span>
+                <label class="top" for="email2">Confirm Email*:</label>
+                <input type="email" id="email2" name="email2" required pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" title="Please enter a valid email address" aria-describedby="email2-help" oninput="validateEmail(this)" onblur="validateEmail(this)">
+                <span id="email2-help" class="form-help">Confirm Email</span>
             </fieldset>
+            
         
             <fieldset>
                 <legend>Rating (Optional)</legend>

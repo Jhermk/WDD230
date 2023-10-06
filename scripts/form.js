@@ -1,7 +1,7 @@
-// Function to check if passwords match
-function checkPassword(input) {
+$// Function to check if passwords match
+function checkPassword() {
     let password = document.getElementById("password").value;
-    let confirmPassword = input.value;
+    let confirmPassword = document.getElementById("passwordConfirm").value;
     let passwordConfirmHelp = document.getElementById("password-confirm-help");
 
     if (password === confirmPassword) {
@@ -26,9 +26,9 @@ function validateEmail(input) {
         emailHelp.style.color = "green";
 
         // Check if the input is the "Confirm Email" field
-        if (input.name === "email2") {
+        if (input.id === "email2") {
             // Get the original email field value
-            let originalEmail = document.querySelector('input[name="email"]').value;
+            let originalEmail = document.querySelector('#email').value;
 
             // Compare the values of the two email fields
             if (email === originalEmail) {
@@ -45,10 +45,17 @@ function validateEmail(input) {
     }
 }
 
-
 // Function to update the rating value
 function updateRating(input) {
     let ratingValue = document.getElementById("ratingValue");
     ratingValue.innerText = input.value;
 }
 
+// Add event listeners for password confirmation and email validation
+document.getElementById("passwordConfirm").addEventListener("input", checkPassword);
+document.getElementById("email").addEventListener("input", function() {
+    validateEmail(this);
+});
+document.getElementById("email2").addEventListener("input", function() {
+    validateEmail(this);
+});
