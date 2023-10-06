@@ -21,6 +21,7 @@ form legend {
 }
 
 input {
+    --webkit-appearance: none;
     min-width: 50%;
     height: 48px;
 }
