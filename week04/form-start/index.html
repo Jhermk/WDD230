@@ -31,49 +31,26 @@
 
     <main>
         <h1>Course Proposal Application</h1>
-        <form method="get" action="/wdd230/week04/form-start/thanks.html">
+        <form method="get" action="/record.html">
             <fieldset>
-                <legend>Applicant Information</legend>
-                <label class="top"> First Name*<input type="text" name="fname" required></label>
-                <label class="top"> Last Name*<input type="text" name="lname" required></label>
-                <label class="top"> Phone<input type="tel" name="phone" placeholder="123555123"></label>
-                <label class="top"> Email*<input type="email" name="email" placeholder="Someone@gmail.com" required></label>
-                <label class="top"> Website<input type="url" name="url" placeholder="http://"></label>
+                <legend>Account Information</legend>
+                <label class="top" for="username">Username*<input type="text" id="username" name="username" required></label>
+                <label class="top" for="password">Password*<input type="password" id="password" name="password" required pattern="[A-Za-z0-9]{8,}" title="Password must be at least 8 characters long and alphanumeric"></label>
+                <label class="top" for="confirm_password">Confirm Password*<input type="password" id="confirm_password" name="confirm_password" required></label>
             </fieldset>
-
+    
             <fieldset>
-                <legend>Course Information</legend>
-                <div>audience</div>
-                <label class="sbs"><input type="radio" name="audience" value="Beginner">Beginner</label>
-                <label class="sbs"><input type="radio" name="audience" value="intermediate">Intermediate</label>
-                <label class="sbs"><input type="radio" name="audience" value="advance">Advance</label>
-
-                <div>Software Needed</div>
-                <label class="sbs"><input type="checkbox" name="editing" value="yes">Photo Editing</label>
-                <label class="sbs"><input type="checkbox" name="code" value="yes">Coding</label>
-                <label class="sbs"><input type="checkbox" name="process" value="yes">Preprocessor</label>
-                <label class="sbs"><input type="checkbox" name="client" value="yes">FTP Client</label>
+                <legend>Contact Information</legend>
+                <label class="top" for="email">Email*<input type="email" id="email" name="email" required pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" title="Please enter a valid email address from the byui.edu domain"></label>
             </fieldset>
-
+    
             <fieldset>
-                <legend>funding</legend>
-                <label class="top">Anticipated Completion Date <input type="date" name="completeDate"></label>
-                <label class="top">Course Subject
-                <select name="subject">
-                    <option value="">Please Select &#9662</option>
-                    <option value="software">Software Development</option>
-                    <option value="creative">Creative Professional</option>
-                    <option value="info">Information Technology</option>
-                    <option value="data">Data Professional</option>
-                    <option value="construction">Construction</option>
-                    <option value="manufacturing">Manufacturing</option>
-                    <option value="security">Cyber Security</option>
-                    <option value="businesses">Bussiness Management</option>
-                </select>
-                </label>
-                <label class="top">How many author <input type="number" name="authors"></label>
+                <legend>Page Rating</legend>
+                <label class="sbs" for="rating">Page Rating<input type="range" id="rating" name="rating" min="1" max="10" step="1" oninput="document.getElementById('ratingValue').textContent = this.value;"></label>
+                <span id="ratingValue">1</span>
             </fieldset>
-            <input type="submit" value="propose My course" class="submitBtn">
+    
+            <input type="submit" value="Submit" class="submitBtn">
         </form>
 
     </main>

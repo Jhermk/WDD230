@@ -190,6 +190,17 @@ main h2 {
 }
 
 
+#confirmationInfo {
+    background-color: #020702;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 18px;
+}
+
+
+
 /* Footer */
 
 footer p {

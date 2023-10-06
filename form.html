@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Hermann F. J Koffi">
+    <meta name="description" content="WDD 230 Web Frontend Development by Hermann F. J Koffi | my course assignment portal page. ">
+    <meta property="og:title" content="Wdd230 Course Homepage">
+    <meta property="og:type" content="website">
+    <meta property="og:image" content="https://i.ytimg.com/vi/ptLXavw6CZc/maxresdefault.jpg">
+    <meta property="og:url" content="https://jhermk.github.io/wdd230">
+    <title>Hermann F. J Koffi - WDD 230 - Web Frontend Development</title>
+    <link rel="stylesheet" href="/styles/normalize.css">
+    <link rel="stylesheet" href="/styles/base.css">
+    <link rel="stylesheet" href="/styles/larger.css">
+    <link rel="stylesheet" href="/styles/form.css">
+    <link rel="icon" href="/wdd230/images/favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Roboto+Condensed&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img src="/images/photo.webp" alt="My photo">
+        <h1>Hermann F. J Koffi</h1>
+        <div id="mode">
+            ☑️
+        </div>
+    </header>
+    <a id="menu" href="#"></a>
+    <nav>
+        <ul class="navigation">
+            <li><a href="#">Home</a></li>
+            <li><a href="/wdd230/chamber/index.html">chamber</a></li>
+            <li><a href="/wdd230/week01/chamber-site-plan.html">Site-Plan</a></li>
+            <li><a href="#">Form</a></li>
+        </ul>
+    </nav>
+    <main>
+        <h1>Form Page</h1>
+        <form method="get" action="record.html">
+            <fieldset>
+                <legend>User Information</legend>
+        
+                <label class="top" for="username">Username*:</label>
+                <input type="text" id="username" name="username" required aria-describedby="username-help">
+                <span id="username-help" class="form-help">Please enter a username</span>
+        
+                <label class="top" for="password">Password*:</label>
+                <input type="password" id="password" name="password" required pattern="[a-zA-Z0-9]{8,}" aria-describedby="password-help">
+                <span id="password-help" class="form-help">Password must be at least 8 characters long and alphanumeric</span>
+        
+                <label class="top" for="passwordConfirm">Confirm Password*:</label>
+                <input type="password" id="passwordConfirm" name="passwordConfirm" required oninput="checkPassword(this)" aria-describedby="password-confirm-help">
+                <span id="password-confirm-help" class="form-help">Passwords must match</span>
+            </fieldset>
+        
+            <fieldset>
+                <legend>Contact Information</legend>
+        
+                <label class="top" for="email">Email*:</label>
+                <!-- <input type="email" id="email" name="email" required pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" title="Please enter a valid email address" aria-describedby="email-help"> -->
+                <input type="email" id="email" name="email" required pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" title="Please enter a valid email address" aria-describedby="email-help" oninput="validateEmail(this)" onblur="validateEmail(this)">
+                <span id="email-help" class="form-help">Please enter a valid email address from byui.edu</span>
+            </fieldset>
+        
+            <fieldset>
+                <legend>Rating (Optional)</legend>
+                <label class="top" for="pageRating">Page Rating:</label>
+                <input type="range" id="pageRating" name="pageRating" min="1" max="10" step="1" oninput="updateRating(this)" aria-describedby="rating-help">
+                <span id="rating-help" class="form-help">Current Rating: <span id="ratingValue">1</span></span>
+            </fieldset>
+        
+            <button type="submit" class="submitBtn">Submit</button>
+        </form>
+        
+        
+        
+    </main>
+
+    
+        
+    <footer>
+        <p>&copy; <span id="year"></span> | Hermann F. J Koffi | Cote d'ivoire <img class="flag" src="/images/flag.webp" alt="Cote D'ivoire flag"> </p>
+        <p id="lastModified"></p>
+    </footer>
+    
+<script defer src="/scripts/getDates.js"></script>
+<script defer src="/scripts/hamburger.js"></script>
+<script defer src="/scripts/dark.js"></script>
+<script defer src="/scripts/localStorage.js"></script>
+<script defer src="/scripts/form.js"></script>
+</body>
+</html>

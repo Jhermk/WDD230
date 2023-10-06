@@ -1,0 +1,61 @@
+   form fieldset {
+       margin: 0 2%;
+       border: 1px solid #445ba9;
+       border-radius: 10px;
+       padding: .5rem 2%;
+       background-color: #445ca90e;
+   }
+
+
+   form legend {
+       color: #000;
+       margin: 0 1rem;
+       padding: 0 .5rem;
+       font-weight: 800;
+   }
+
+   input {
+       min-width: 50%;
+       height: 48px;
+   }
+
+   input:required {
+       border-left: red solid 6px;
+   }
+
+   input:required:valid {
+       border-left: green solid 6px;
+   }
+
+   form label.top,
+   form div {
+       display: block;
+       padding-top: 1rem;
+       color: #445ba9;
+       font-size: .8rem;
+       font-size: 18px;
+   }
+
+   form label.sbs {
+       display: block;
+       padding: .75rem 0;
+       color: #555;
+   }
+
+   .submitBtn {
+       border: none;
+       background-color: #445ba9;
+       color: white;
+       border-radius: 1rem;
+       padding: .75rem 1.5rem;
+       margin: 2%;
+       width: 90%;
+       max-width: 20rem;
+   }
+
+   /* Clearfix: Force an Element not to collapse */
+   .clearfix:after {
+       content: "";
+       display: table;
+       clear: both;
+   }
