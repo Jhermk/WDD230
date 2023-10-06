@@ -30,7 +30,7 @@ function validateEmail(input) {
 
 // Add event listener for email validation
 const emailInput = document.getElementById("email");
-emailInput.addEventListener("input", function() {
+emailInput.addEventListener("input", function () {
     validateEmail(this);
 });
 
@@ -40,10 +40,3 @@ function updateRating(input) {
     let ratingValue = document.getElementById("ratingValue");
     ratingValue.innerText = input.value;
 }
-
-// Add event listeners for password confirmation and email validation
-document.getElementById("passwordConfirm").addEventListener("input", checkPassword);
-document.getElementById("email").addEventListener("input", function() {
-    validateEmail(this);
-});
-

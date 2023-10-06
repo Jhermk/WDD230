@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Hermann F. J Koffi">
-    <meta name="description" content="WDD 230 Web Frontend Development by Hermann F. J Koffi | Form assignment. ">
+    <meta name="description" content="WDD 230| Form build assignment. ">
     <meta property="og:title" content="Wdd230 Course Homepage">
     <meta property="og:type" content="website">
     <meta property="og:image" content="https://i.ytimg.com/vi/ptLXavw6CZc/maxresdefault.jpg">
     <meta property="og:url" content="https://jhermk.github.io/wdd230">
-    <title>Form page</title>
+    <title>Form Page</title>
     <link rel="stylesheet" href="/wdd230/styles/normalize.css">
     <link rel="stylesheet" href="/wdd230/styles/base.css">
     <link rel="stylesheet" href="/wdd230/styles/larger.css">
@@ -41,54 +41,47 @@
         <form method="get" action="/wdd230/record.html">
             <fieldset>
                 <legend>User Information</legend>
-        
+
                 <label class="top" for="username">Username*:</label>
-                <input type="text" id="username" name="username" required aria-describedby="username-help">
+                <input type="text" id="username" name="username" required aria-labelledby="username-label username-help">
                 <span id="username-help" class="form-help">Please enter a username</span>
-        
-                <label class="top" for="password">Password*:</label>
-                <input type="password" id="password" name="password" required pattern="[a-zA-Z0-9]{8,}" aria-describedby="password-help">
+
+                <label class="top" for="password">Password* (at least 8 characters long and alphanumeric):</label>
+                <input type="password" id="password" name="password" required pattern="[a-zA-Z0-9]{8,}" aria-labelledby="password-label password-help">
                 <span id="password-help" class="form-help">Password must be at least 8 characters long and alphanumeric</span>
-        
+
                 <label class="top" for="passwordConfirm">Confirm Password*:</label>
-                <input type="password" id="passwordConfirm" name="passwordConfirm" required oninput="checkPassword(this)" aria-describedby="password-confirm-help">
-                <span id="password-confirm-help" class="form-help">Passwords must match</span>
+                <input type="password" id="passwordConfirm" name="passwordConfirm" required oninput="checkPassword(this)" aria-labelledby="password-confirm-label password-confirm-help">
+                <span id="password-confirm-help" class="form-help" aria-live="polite">Passwords must match</span>
             </fieldset>
-        
+
             <fieldset>
                 <legend>Contact Information</legend>
                 <label class="top" for="email">Email*:</label>
-                <input type="email" id="email" name="email" required pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" title="Please enter a valid email address" aria-describedby="email-help" oninput="validateEmail(this)" onblur="validateEmail(this)">
+                <input type="email" id="email" name="email" required pattern="[a-zA-Z0-9._%+-]+@byui\.edu$" title="Please enter a valid email address from byui.edu" aria-labelledby="email-label email-help" oninput="validateEmail(this)" onblur="validateEmail(this)">
                 <span id="email-help" class="form-help">Please enter a valid email address from byui.edu</span>
             </fieldset>
-            
-            
-        
+
             <fieldset>
                 <legend>Rating (Optional)</legend>
                 <label class="top" for="pageRating">Page Rating:</label>
-                <input type="range" id="pageRating" name="pageRating" min="1" max="10" step="1" oninput="updateRating(this)" aria-describedby="rating-help">
+                <input type="range" id="pageRating" name="pageRating" min="1" max="10" step="1" oninput="updateRating(this)" aria-labelledby="rating-label rating-help">
                 <span id="rating-help" class="form-help">Current Rating: <span id="ratingValue">1</span></span>
             </fieldset>
-        
-            <button type="submit" class="submitBtn">Submit</button>
+
+            <button type="submit" class="submitBtn">Send</button>
         </form>
-        
-        
-        
     </main>
 
-    
-        
     <footer>
         <p>&copy; <span id="year"></span> | Hermann F. J Koffi | Cote d'ivoire <img class="flag" src="/wdd230/images/flag.webp" alt="Cote D'Ivoire flag"> </p>
         <p id="lastModified"></p>
     </footer>
-    
-<script defer src="/wdd230/scripts/getDates.js"></script>
-<script defer src="/wdd230/scripts/hamburger.js"></script>
-<script defer src="/wdd230/scripts/dark.js"></script>
-<script defer src="/wdd230/scripts/localStorage.js"></script>
-<script defer src="/wdd230/scripts/form.js"></script>
+
+    <script defer src="/wdd230/scripts/getDates.js"></script>
+    <script defer src="/wdd230/scripts/hamburger.js"></script>
+    <script defer src="/wdd230/scripts/dark.js"></script>
+    <script defer src="/wdd230/scripts/localStorage.js"></script>
+    <script defer src="/wdd230/scripts/form.js"></script>
 </body>
 </html>
