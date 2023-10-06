@@ -6,7 +6,7 @@
 }
 
 form fieldset {
-    margin: 0 2%;
+    margin: 1rem 2%;
     border: 1px solid var(--primary-color);
     border-radius: 10px;
     padding: .5rem 2%;
