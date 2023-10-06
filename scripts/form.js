@@ -13,37 +13,27 @@ function checkPassword() {
     }
 }
 
-// Function to validate the email format and confirm email
+// Function to validate the email format
 function validateEmail(input) {
-    let email = input.value;
-    let emailHelp = input.nextElementSibling;
-
-    // Regular expression to match the specified pattern
-    let emailPattern = /^[a-zA-Z0-9._%+-]+@byui\.edu$/;
+    const email = input.value;
+    const emailHelp = input.nextElementSibling;
+    const emailPattern = /^[a-zA-Z0-9._%+-]+@byui\.edu$/;
 
     if (emailPattern.test(email)) {
         emailHelp.innerText = "Email format is valid";
         emailHelp.style.color = "green";
-
-        // Check if the input is the "Confirm Email" field
-        if (input.id === "email2") {
-            // Get the original email field value
-            let originalEmail = document.querySelector('#email').value;
-
-            // Compare the values of the two email fields
-            if (email === originalEmail) {
-                emailHelp.innerText = "Emails match";
-                emailHelp.style.color = "green";
-            } else {
-                emailHelp.innerText = "Emails do not match";
-                emailHelp.style.color = "red";
-            }
-        }
     } else {
         emailHelp.innerText = "Please enter a valid email address from byui.edu";
         emailHelp.style.color = "red";
     }
 }
+
+// Add event listener for email validation
+const emailInput = document.getElementById("email");
+emailInput.addEventListener("input", function() {
+    validateEmail(this);
+});
+
 
 // Function to update the rating value
 function updateRating(input) {
@@ -56,6 +46,4 @@ document.getElementById("passwordConfirm").addEventListener("input", checkPasswo
 document.getElementById("email").addEventListener("input", function() {
     validateEmail(this);
 });
-document.getElementById("email2").addEventListener("input", function() {
-    validateEmail(this);
-});
+
