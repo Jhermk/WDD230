@@ -13,10 +13,10 @@ function checkPassword(input) {
     }
 }
 
-// Function to validate the email format
+// Function to validate the email format and confirm email
 function validateEmail(input) {
     let email = input.value;
-    let emailHelp = document.getElementById("email-help");
+    let emailHelp = input.nextElementSibling;
 
     // Regular expression to match the specified pattern
     let emailPattern = /^[a-zA-Z0-9._%+-]+@byui\.edu$/;
@@ -24,11 +24,27 @@ function validateEmail(input) {
     if (emailPattern.test(email)) {
         emailHelp.innerText = "Email format is valid";
         emailHelp.style.color = "green";
+
+        // Check if the input is the "Confirm Email" field
+        if (input.name === "email2") {
+            // Get the original email field value
+            let originalEmail = document.querySelector('input[name="email"]').value;
+
+            // Compare the values of the two email fields
+            if (email === originalEmail) {
+                emailHelp.innerText = "Emails match";
+                emailHelp.style.color = "green";
+            } else {
+                emailHelp.innerText = "Emails do not match";
+                emailHelp.style.color = "red";
+            }
+        }
     } else {
         emailHelp.innerText = "Please enter a valid email address from byui.edu";
         emailHelp.style.color = "red";
     }
 }
+
 
 // Function to update the rating value
 function updateRating(input) {
