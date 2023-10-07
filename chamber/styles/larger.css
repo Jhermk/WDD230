@@ -94,6 +94,17 @@
         margin-top: 50px;
     }
 
+    /* Join page */
+    main{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 40px;
+        max-width: 1200px;
+        padding: 20px;
+        
+    }
+
+    /* end */
 
 
 

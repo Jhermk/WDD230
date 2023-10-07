@@ -312,6 +312,90 @@ figure figcaption {
 
 /* end */
 
+/* Join page css */
+/* Style the main container */
+main {
+    max-width: 500px;
+    padding: 20px;
+}
+
+/* Style the form container */
+.form-container {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style form labels */
+label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+/* Style form inputs and textareas */
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Style submit button */
+input[type="submit"] {
+    background-color: #1a1402;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* Style membership benefits section */
+.membership-benefits {
+    margin-top: 20px;
+}
+
+/* Style membership levels */
+.membershipLevels {
+    padding-top: 20px;
+}
+
+/* Style membership level headings */
+.membershipLevels h2 {
+    margin-top: 20px;
+    font-size: 24px;
+}
+
+/* Style membership level fees */
+.membershipLevels .fee {
+    font-weight: bold;
+}
+
+/* Style membership level benefits */
+.membershipLevels ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+/* Style membership level benefits list items */
+.membershipLevels li {
+    margin-bottom: 5px;
+}
+
+/* end*/
+
 
 
 
