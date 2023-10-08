@@ -1,3 +1,10 @@
+:root {
+    --primary-color: #445ba9;
+    --secondary-color: #555;
+    --valid-border-color: green;
+    --invalid-border-color: red;
+}
+
 * {
     padding: 0;
     margin: 0;
@@ -314,10 +321,6 @@ figure figcaption {
 
 /* Join page css */
 /* Style the main container */
-main {
-    max-width: 500px;
-    padding: 20px;
-}
 
 /* Style the form container */
 .form-container {
@@ -327,11 +330,26 @@ main {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
+fieldset{
+    padding: 1rem;
+    border-radius: 4px;
+    box-shadow: 4px 4px #CCC;
+}
+
+fieldset legend{
+    font-weight: 900;
+    color: #9c2c13;
+}
+
 /* Style form labels */
 label {
     display: block;
     margin-bottom: 5px;
     font-weight: bold;
+}
+
+input:required:valid {
+    border-left: var(--valid-border-color) solid 6px;
 }
 
 /* Style form inputs and textareas */
@@ -359,7 +377,7 @@ input[type="submit"] {
 }
 
 input[type="submit"]:hover {
-    background-color: #0056b3;
+    background-color: #9c2c13;
 }
 
 /* Style membership benefits section */
