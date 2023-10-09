@@ -418,14 +418,12 @@ input[type="submit"]:hover {
 /* end*/
 
 .confirmation-message {
-    color: rgba(255, 166, 0, 0.979);
     font-weight: bold;
     padding: 60px;
     text-align: center;
     border-radius: 5px;
     height: 40vh;
-    text-shadow: 2px 2px #070202;
-
+    text-shadow: 2px 2px #eec0c0;
 }
 
 
