@@ -330,13 +330,13 @@ figure figcaption {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
-fieldset{
+fieldset {
     padding: 1rem;
     border-radius: 4px;
     box-shadow: 4px 4px #CCC;
 }
 
-fieldset legend{
+fieldset legend {
     font-weight: 900;
     color: #9c2c13;
 }
@@ -414,8 +414,26 @@ input[type="submit"]:hover {
 
 /* end*/
 
+.confirmation-message {
+    color: rgba(255, 166, 0, 0.979);
+    font-weight: bold;
+    padding: 60px;
+    text-align: center;
+    border-radius: 5px;
+    height: 40vh;
+    text-shadow: 2px 2px #070202;
+
+}
 
 
+.confirmation-message h2 {
+    font-size: 24px;
+}
+
+.confirmation-message p {
+    font-size: 16px;
+    margin: 10px 0;
+}
 
 
 footer p {
