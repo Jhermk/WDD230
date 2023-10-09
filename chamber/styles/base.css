@@ -320,14 +320,15 @@ figure figcaption {
 /* end */
 
 /* Join page css */
-/* Style the main container */
+.main-join{
+    padding: 20px;
+}
 
-/* Style the form container */
 .form-container {
-    background-color: #f9f9f9;
     padding: 20px;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
 }
 
 fieldset {
@@ -339,6 +340,8 @@ fieldset {
 fieldset legend {
     font-weight: 900;
     color: #9c2c13;
+    font-size: 18px;
+    letter-spacing: 10px;
 }
 
 /* Style form labels */
