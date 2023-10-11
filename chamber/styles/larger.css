@@ -94,15 +94,10 @@
         margin-top: 50px;
     }
 
-    /* Join page */
     .main-join{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 40px;  
     }
-
-    /* end */
-
-
 
 }
