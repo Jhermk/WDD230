@@ -1,32 +1,37 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Hermann F. J Koffi">
-    <meta name="description" content="Welcome on board to the Official Website of the Sacramento Chamber of Commerce website | Join page">
+    <meta name="description"
+        content="Welcome to the Official Website of the Sacramento Chamber of Commerce | Join Page">
     <meta property="og:title" content="Sacramento Chamber of Commerce">
-    <meta property="og:description" content="Connecting businesses and fostering growth in our community. Join us today!">
+    <meta property="og:description"
+        content="Connecting businesses and fostering growth in our community. Join us today!">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="https://upload.wikimedia.org/wikipedia/commons/4/48/United_States_Chamber_of_Commerce_Building.jpg">
+    <meta property="og:image"
+        content="https://upload.wikimedia.org/wikipedia/commons/4/48/United_States_Chamber_of_Commerce_Building.jpg">
     <meta property="og:url" content="https://sacramentochamber.com/">
-    <title>Sacramento Chamber of Commerce | Join page</title>
+    <title>Sacramento Chamber of Commerce | Join Page</title>
     <link rel="stylesheet" href="/wdd230/chamber/styles/normalize.css">
     <link rel="stylesheet" href="/wdd230/chamber/styles/base.css">
     <link rel="stylesheet" href="/wdd230/chamber/styles/larger.css">
     <link rel="icon" href="/wdd230/chamber/images/favicon.ico">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Roboto+Serif:opsz,wght@8..144,200&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Roboto+Serif:opsz,wght@8..144,200&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <header>
         <div class="header">
-            <h1>Sacramento Chamber of Commerce <br> Empowering Business Growth</h1>
+            <h1>Sacramento Chamber of Commerce<br>Empowering Business Growth</h1>
             <a id="menu" href="#"></a>
-            <div id="mode">
-                ☑️
-            </div>
+            <div id="mode">☑️</div>
         </div>
     </header>
     <p id="date"></p>
@@ -40,135 +45,132 @@
         </ul>
     </nav>
     <main class="main-join">
-    <form action="/wdd230/chamber/thanks.html" method="get">
-        <h1>Membership Application <br> Form</h1>
-        <div class="form-container">
-            <fieldset>
-                <legend>Part I</legend>
-                <div>
-                    <label for="first-name">Applicant's First Name:</label>
-                    <input type="text" id="first-name" name="first-name" required>
-                </div>
-                <div>
-                    <label for="last-name">Applicant's Last Name:</label>
-                    <input type="text" id="last-name" name="last-name" required>
-                </div>
-                <div>
-                    <label for="title">Applicant's Title/Position:</label>
-                    <input type="text" id="title" name="title" pattern="[a-zA-Z\s\-]{7,}" title="Enter at least 7 characters of alphabets, hyphens, and spaces only">
-                </div>
-                <div>
-                    <label for="email">Email Address:</label>
-                    <input type="email" id="email" name="email" required placeholder="johnsmith@example.com">
-                </div>
-            </fieldset>
+        <form action="/wdd230/chamber/thanks.html" method="get">
+            <h1>Membership Application Form</h1>
+            <div class="form-container">
+                <fieldset>
+                    <legend>Part I</legend>
+                    <div>
+                        <label for="first-name">Applicant's First Name:</label>
+                        <input type="text" id="first-name" name="first-name" required>
+                    </div>
+                    <div>
+                        <label for="last-name">Applicant's Last Name:</label>
+                        <input type="text" id="last-name" name="last-name" required>
+                    </div>
+                    <div>
+                        <label for="title">Applicant's Title/Position:</label>
+                        <input type="text" id="title" name="title" pattern="[a-zA-Z\s\-]{7,}"
+                            title="Enter at least 7 characters of alphabets, hyphens, and spaces only">
+                    </div>
+                    <div>
+                        <label for="email">Email Address:</label>
+                        <input type="email" id="email" name="email" required placeholder="example@example.com">
+                    </div>
+                </fieldset>
 
-            <fieldset>
-                <legend>Part II</legend>
-                <div>
-                    <label for="phone">Mobile Phone Number:</label>
-                    <input type="tel" id="phone" name="phone" required>
+                <fieldset>
+                    <legend>Part II</legend>
+                    <div>
+                        <label for="phone">Mobile Phone Number:</label>
+                        <input type="tel" id="phone" name="phone" required>
+                    </div>
+                    <div>
+                        <label for="org-name">Business/Organization's Name:</label>
+                        <input type="text" id="org-name" name="org-name" required>
+                    </div>
+                    <div>
+                        <label for="membership-level">Membership Level:</label>
+                        <select id="membership-level" name="membership-level">
+                            <option value="NP Membership">NP Membership (Free)</option>
+                            <option value="Bronze Membership">Bronze Membership</option>
+                            <option value="Silver Membership">Silver Membership</option>
+                            <option value="Gold Membership">Gold Membership</option>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="org-description">Business/Organization's Description:</label>
+                        <textarea id="org-description" name="org-description"></textarea>
+                    </div>
+                    <input type="hidden" id="timestamp" name="timestamp" value="Current date and time">
+                    <div>
+                        <input type="submit" value="Submit">
+                    </div>
+                </fieldset>
+            </div>
+        </form>
+        <div class="membership-benefits">
+            <div class="membershipLevels">
+                <h1>Membership Levels</h1>
+                <div class="nonprofit">
+                    <h2>Nonprofit</h2>
+                    <p class="fee">No fee</p>
+                    <p>
+                        Plans in the Marketplace are presented in 4 business plan categories: Bronze, Silver, Gold, and
+                        Platinum.
+                    </p>
                 </div>
-                <div>
-                    <label for="org-name">Business/Organization's Name:</label>
-                    <input type="text" id="org-name" name="org-name" required>
+
+                <div class="bronze">
+                    <h2>Bronze</h2>
+                    <p class="fee">$100/month</p>
+                    <p>
+                        Businesses that are for-profit and have less than 50 workers are eligible for bronze membership.
+                        Benefits comprise:
+                    </p>
+                    <ul>
+                        <li>30% discount on events</li>
+                        <li>30% discount for advertisement</li>
+                        <li>100% commission for referrals</li>
+                    </ul>
                 </div>
-                <div>
-                    <label for="membership-level">Membership Level:</label>
-                    <select id="membership-level" name="membership-level">
-                        <option value="NP Membership">NP Membership (Free)</option>
-                        <option value="Bronze Membership">Bronze Membership</option>
-                        <option value="Silver Membership">Silver Membership</option>
-                        <option value="Gold Membership">Gold Membership</option>
-                    </select>
+
+                <div class="silver">
+                    <h2>Silver</h2>
+                    <p class="fee">$150/month</p>
+                    <p>
+                        For-profit companies with fewer than 250 workers are eligible for silver membership. Added
+                        advantages include:
+                    </p>
+                    <ul>
+                        <li>60% discount on events</li>
+                        <li>60% discount on advertising</li>
+                        <li>100% commission for referrals</li>
+                        <li>Free transactions between members</li>
+                    </ul>
                 </div>
-                <div>
-                    <label for="org-description">Business/Organization's Description:</label>
-                    <textarea id="org-description" name="org-description"></textarea>
+
+                <div class="gold">
+                    <h2>Gold</h2>
+                    <p class="fee">$250/month</p>
+                    <p>
+                        For-profit companies with more than 250 employees are eligible for gold membership. Additional
+                        benefits include:
+                    </p>
+                    <ul>
+                        <li>80% off tickets to events</li>
+                        <li>Free attendance at the trade show</li>
+                        <li>100% commission for referrals</li>
+                        <li>5 featured ads per year</li>
+                        <li>Free transactions between members</li>
+                        <li>1 free training per quarter</li>
+                    </ul>
                 </div>
-                <input type="hidden" id="timestamp" name="timestamp" value="Current date and time">
-                <div>
-                    <input type="submit" value="Submit">
-                </div>
-            </fieldset>
-            
+            </div>
         </div>
-    </form>
-    <div class="membership-benefits">
-        <div class="membershipLevels">
-            <h1>Membership Levels</h1>
-            <div class="nonprofit">
-                <h2>Nonprofit</h2>
-                <p class="fee">No fee</p>
-                <p>
-                    Plans in the Marketplace are presented in 4 business plan categories: Bronze, Silver, Gold, and
-                    Platinum.
-                </p>
-            </div>
-
-            <div class="bronze">
-                <h2>Bronze</h2>
-                <p class="fee">$100/month</p>
-                <p>
-                    Businesses that are for-profit and have less than 50 workers are eligible for bronze membership.
-                    Benefits comprise:
-                </p>
-                <ul>
-                    <li>30% discount on events</li>
-                    <li>30% discount For advertisement</li>
-                    <li>100% comission for referals</li>
-                </ul>
-            </div>
-
-            <div class="silver">
-                <h2>Silver</h2>
-                <p class="fee">$150/month</p>
-                <p>
-                    For-profit companies with fewer than 250 workers are eligible for silver membership. Added
-                    advantages include:
-                </p>
-                <ul>
-                    <li>60% discount on events</li>
-                    <li>60% discount on advertising</li>
-                    <li>100% comission for referals</li>
-                    <li>Free Transaction between members</li>
-                </ul>
-            </div>
-
-            <div class="gold">
-                <h2>Gold</h2>
-                <p class="fee">$250/month</p>
-                <p>
-                    For-profit companies with more than 250 employees are eligible for gold membership. Additional
-                    benefits include:
-                </p>
-                <ul>
-                    <li>80% off tickets to events</li>
-                    <li>Free attendance to the trade show</li>
-                    <li>100% comission for referals</li>
-                    <li>5 featured ads per year</li>
-                    <li>Free Transaction between members</li>
-                    <li>1 free training per quarter</li>
-                </ul>
-            </div>
-
-
-        </div>
-
-    </div>
-
     </main>
-
     <footer>
-        <p>&copy; <span id="year"></span> | Sacramento Chamber of Commerce <br> Contact: (801) 601-3210 | Email: Sacramentochamb@gmail.com <br> Location: 2479 Riverwood Drive Sacramento CA <br> WDD230 Hermann F. J Koffi </p>
+        <p>&copy; <span id="year"></span> | Sacramento Chamber of Commerce<br>Contact: (801) 601-3210 | Email:
+            Sacramentochamb@gmail.com<br>Location: 2479 Riverwood Drive Sacramento, CA<br>WDD230 Hermann F. J Koffi</p>
         <p id="lastModified"></p>
-        <a href="/wdd230/chamber/index.html"><img class="logo" src="/wdd230/chamber/images/logo.webp" alt="Logo png"></a>
+        <a href="/wdd230/chamber/index.html"><img class="logo" src="/wdd230/chamber/images/logo.webp"
+                alt="Logo png"></a>
     </footer>
-    
     <script defer src="/wdd230/chamber/scripts/getDates.js"></script>
     <script defer src="/wdd230/chamber/scripts/hamburger.js"></script>
     <script defer src="/wdd230/chamber/scripts/dark.js"></script>
     <script defer src="/wdd230/chamber/scripts/lazy-loading.js"></script>
     <script defer src="/wdd230/chamber/scripts/localStorage.js"></script>
 </body>
+
 </html>

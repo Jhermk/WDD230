@@ -94,10 +94,10 @@
         margin-top: 50px;
     }
 
-    .main-join{
+    .main-join {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        gap: 40px;  
+        gap: 40px;
     }
 
 }
