@@ -80,11 +80,11 @@
                     "title": "JSON"
                 },
                 {
-                    "url": "wdd230/week05/prophets.html",
+                    "url": "/week05/prophets.html",
                     "title": "The Fetch API"
                 },
                 {
-                    "url": "wdd230/week05/weather.html",
+                    "url": "/week05/weather.html",
                     "title": "Consuming a Weather API"
                 }
             ]
