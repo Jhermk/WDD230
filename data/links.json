@@ -4,11 +4,11 @@
             "week": "Week 1",
             "links": [
                 {
-                    "url": "/wdd230/week01/holygrail.html",
+                    "url": "week01/holygrail.html",
                     "title": "Layout"
                 },
                 {
-                    "url": "/wdd230/week01/media-query.html",
+                    "url": "week01/media-query.html",
                     "title": "Media Query"
                 },
                 {
@@ -21,7 +21,7 @@
             "week": "Week 2",
             "links": [
                 {
-                    "url": "/wdd230/week02/design.html",
+                    "url": "week02/design.html",
                     "title": "Design"
                 }
             ]
@@ -30,19 +30,19 @@
             "week": "Week 3",
             "links": [
                 {
-                    "url": "/wdd230/week03/images/landscape.webp",
+                    "url": "week03/images/landscape.webp",
                     "title": "Webp"
                 },
                 {
-                    "url": "/wdd230/week03/lazyloading.html",
+                    "url": "week03/lazyloading.html",
                     "title": "lazyloading"
                 },
                 {
-                    "url": "/wdd230/week03/responsive-images.html",
+                    "url": "week03/responsive-images.html",
                     "title": "srcset"
                 },
                 {
-                    "url": "/wdd230/week03/boom/index.html",
+                    "url": "week03/boom/index.html",
                     "title": "BOM"
                 }
             ]
@@ -55,15 +55,15 @@
                     "title": "CSS Pseudo-Classes"
                 },
                 {
-                    "url": "/wdd230/images/w3school.webp",
+                    "url": "images/w3school.webp",
                     "title": "CSS Combinators"
                 },
                 {
-                    "url": "/wdd230/week04/tablebuild.html",
+                    "url": "week04/tablebuild.html",
                     "title": "Tablebuild"
                 },
                 {
-                    "url": "/wdd230/week04/form-start/index.html",
+                    "url": "week04/form-start/index.html",
                     "title": "Form Build"
                 }
             ]
@@ -76,15 +76,15 @@
                     "title": "CSS Pseudo-Elements"
                 },
                 {
-                    "url": "/wdd230/week05/new-ward-members.json",
+                    "url": "week05/new-ward-members.json",
                     "title": "JSON"
                 },
                 {
-                    "url": "/wdd230/week05/prophets.html",
+                    "url": "wdd230/week05/prophets.html",
                     "title": "The Fetch API"
                 },
                 {
-                    "url": "/wdd230/week05/weather.html",
+                    "url": "wdd230/week05/weather.html",
                     "title": "Consuming a Weather API"
                 }
             ]
