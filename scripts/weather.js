@@ -1,7 +1,6 @@
 const currentTemp = document.querySelector('#current-temp');
 const weatherIcon = document.querySelector('#weather-icon');
-const weatherDescription = document.querySelector('#weather-description');
-
+const weatherDescription = document.querySelector('#weather-description'); 
 const apiKey = '2c7980475c08ffbafe5117afe00a84e';
 const latitude = 5.36;
 const longitude = 4.00;
@@ -25,7 +24,7 @@ async function apiFetch() {
 apiFetch();
 
 function displayWeatherData(data) {
-    const temperature = (data.main.temp - 273.15).toFixed(2) + '°C'; 
+    const temperature = (data.main.temp - 273.15).toFixed(2) + '°C';
     const iconCode = data.weather[0].icon;
     const description = data.weather[0].description;
 
