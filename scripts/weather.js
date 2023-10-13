@@ -1,7 +1,7 @@
 const currentTemp = document.querySelector('#current-temp');
 const weatherIcon = document.querySelector('#weather-icon');
-const weatherDescription = document.querySelector('#weather-description'); 
-const apiKey = '2c7980475c08ffbafe5117afe00a84e';
+const weatherDescription = document.querySelector('#weather-description');
+const apiKey = '2c7980475c08ffbafe5117afe00a84e'; // Your API key
 const latitude = 5.36;
 const longitude = 4.00;
 
@@ -14,7 +14,7 @@ async function apiFetch() {
             const data = await response.json();
             displayWeatherData(data);
         } else {
-            throw Error(await response.text());
+            throw new Error(await response.text());
         }
     } catch (error) {
         console.error('Error fetching weather data:', error);
