@@ -1,37 +1,41 @@
 const currentTemp = document.querySelector('#current-temp');
 const weatherIcon = document.querySelector('#weather-icon');
-const weatherDescription = document.querySelector('#weather-description');
-const apiKey = '2c7980475c08ffbafe5117afe00a84e'; // Your API key
-const latitude = 5.36;
-const longitude = 4.00;
+const captionDesc = document.querySelector('#weather-description');
 
-const apiUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${latitude}&lon=${longitude}&appid=${apiKey}`;
+const apiKey = '2c7980475c08ffbafe5117afe00a84ee';
+const lat = '5.36';
+const lon = '4.00';
+
+const url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${apiKey}`;
 
 async function apiFetch() {
     try {
-        const response = await fetch(apiUrl);
+        const response = await fetch(url);
         if (response.ok) {
             const data = await response.json();
-            displayWeatherData(data);
+            console.log(data);
+            displayResults(data);
         } else {
-            throw new Error(await response.text());
+            throw Error(await response.text());
         }
     } catch (error) {
-        console.error('Error fetching weather data:', error);
+        console.log(error);
     }
 }
 
 apiFetch();
 
-function displayWeatherData(data) {
-    const temperature = (data.main.temp - 273.15).toFixed(2) + '°C';
-    const iconCode = data.weather[0].icon;
+function displayResults(data) {
+    const temperature = data.main.temp;
+    const icon = data.weather[0].icon;
     const description = data.weather[0].description;
 
-    currentTemp.textContent = `Temperature: ${temperature}`;
-    weatherDescription.textContent = `Condition: ${description}`;
+    // Convert temperature to Fahrenheit
+    const fahrenheit = (temperature - 273.15) * 9 / 5 + 32;
 
-    // Set the image source with the appropriate URL
-    weatherIcon.src = `https://openweathermap.org/img/w/${iconCode}.png`;
-    weatherIcon.alt = "Weather Icon";
+    currentTemp.innerHTML = `${Math.round(fahrenheit)}&deg;F`;
+    const iconSrc = `https://openweathermap.org/img/w/${icon}.png`;
+    weatherIcon.setAttribute('src', iconSrc);
+    weatherIcon.setAttribute('alt', description);
+    captionDesc.textContent = description;
 }
