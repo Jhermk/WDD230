@@ -1,0 +1,52 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'poppins', sans-serif;
+    color: rgb(85, 85, 85);
+}
+
+#content {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    justify-content: center;
+    box-shadow: 4px 4px 4px #CCC;
+}
+
+.cards section {
+    border: 1px solid rgb(33, 33, 46);
+    background-color: rgb(8, 39, 49);
+    padding: 30px;
+    text-align: center;
+    width: 300px;
+    margin: 20px;
+}
+
+h1 {
+    text-align: center;
+    background-color: black;
+    color: #fff;
+}
+
+h2 {
+    color: #fff;
+    text-align: center;
+}
+
+p {
+    color: #8d8b8b;
+}
+
+img {
+    width: 90%;
+}
+
+footer {
+    background-color: #000;
+    color: #fff;
+}

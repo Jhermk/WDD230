@@ -1,0 +1,33 @@
+{
+    "family-name": "Koffi",
+    "moved-date": 2013,
+    "record-number": 5,
+    "visted": true,
+    "members": [
+        {
+            "name": "N Guessan Frederic",
+            "gender": "M",
+            "birthdate": 1968
+        },
+        {
+            "name": "Moumounou Turner Lorca",
+            "gender": "F",
+            "birthdate": 1972
+        },
+        {
+            "name": "Amany Kevin Patrick",
+            "gender": "M",
+            "birthdate": 1996
+        },
+        {
+            "name": "Hermann Frederic Junior Koffi",
+            "gender": "M",
+            "birthdate": 1999
+        },
+        {
+            "name": "Josue Yann Martinien",
+            "gender": "M",
+            "age": 2005
+        }
+    ]
+}
