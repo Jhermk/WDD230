@@ -14,7 +14,7 @@ function displayLinks(weeks) {
         const weekItem = document.createElement('li');
         const weekLinks = week.links.map(link => {
             const linkElement = document.createElement('a');
-            linkElement.href = `${baseURL}${link.url}`;
+            linkElement.href = link.url.startsWith('http') ? link.url : `${baseURL}${link.url}`;
             linkElement.textContent = link.title;
             return linkElement;
         });
