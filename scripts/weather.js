@@ -25,7 +25,7 @@ async function apiFetch() {
 apiFetch();
 
 function displayWeatherData(data) {
-    const temperature = (data.main.temp - 273.15).toFixed(2) + '°C'; // Convert temperature to Celsius and round to 2 decimal places
+    const temperature = (data.main.temp - 273.15).toFixed(2) + '°C'; 
     const iconCode = data.weather[0].icon;
     const description = data.weather[0].description;
 
