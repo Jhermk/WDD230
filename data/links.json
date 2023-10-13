@@ -1,0 +1,93 @@
+{
+    "weeks": [
+        {
+            "week": "Week 1",
+            "links": [
+                {
+                    "url": "/wdd230/week01/holygrail.html",
+                    "title": "Layout"
+                },
+                {
+                    "url": "/wdd230/week01/media-query.html",
+                    "title": "Media Query"
+                },
+                {
+                    "url": "https://codepen.io/jhermk/pen/abPLMGX",
+                    "title": "JS Pen"
+                }
+            ]
+        },
+        {
+            "week": "Week 2",
+            "links": [
+                {
+                    "url": "/wdd230/week02/design.html",
+                    "title": "Design"
+                }
+            ]
+        },
+        {
+            "week": "Week 3",
+            "links": [
+                {
+                    "url": "/wdd230/week03/images/landscape.webp",
+                    "title": "Webp"
+                },
+                {
+                    "url": "/wdd230/week03/lazyloading.html",
+                    "title": "lazyloading"
+                },
+                {
+                    "url": "/wdd230/week03/responsive-images.html",
+                    "title": "srcset"
+                },
+                {
+                    "url": "/wdd230/week03/boom/index.html",
+                    "title": "BOM"
+                }
+            ]
+        },
+        {
+            "week": "Week 4",
+            "links": [
+                {
+                    "url": "https://codepen.io/jhermk/pen/yLGQJmq",
+                    "title": "CSS Pseudo-Classes"
+                },
+                {
+                    "url": "/wdd230/images/w3school.webp",
+                    "title": "CSS Combinators"
+                },
+                {
+                    "url": "/wdd230/week04/tablebuild.html",
+                    "title": "Tablebuild"
+                },
+                {
+                    "url": "/wdd230/week04/form-start/index.html",
+                    "title": "Form Build"
+                }
+            ]
+        },
+        {
+            "week": "Week 5",
+            "links": [
+                {
+                    "url": "https://codepen.io/jhermk/pen/RwEvyJa",
+                    "title": "CSS Pseudo-Elements"
+                },
+                {
+                    "url": "/wdd230/week05/new-ward-members.json",
+                    "title": "JSON"
+                },
+                {
+                    "url": "/wdd230/week05/prophets.html",
+                    "title": "The Fetch API"
+                },
+                {
+                    "url": "/wdd230/week05/weather.html",
+                    "title": "Consuming a Weather API"
+                }
+            ]
+        }
+    ]
+}

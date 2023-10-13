@@ -154,7 +154,21 @@ nav ul>li:first-child a {
 }
 
 
+/* Weather Card */
 
+.weather-card {
+    padding: 10px 0;
+  }
+  
+  .temperature, .condition {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .weather-icon img {
+    max-width: 50px;
+    max-height: 50px;
+  }
 
 
 main {
