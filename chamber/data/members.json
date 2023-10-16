@@ -1,0 +1,167 @@
+{
+    "businesses": [
+        {
+            "name": "KFC",
+            "type": "Fast Food",
+            "location": {
+                "address1": "145 # La Street",
+                "city": "Los Angeles",
+                "state": "CA",
+                "zip_code": "90002"
+            },
+            "phone": "+1-202-555-0105",
+            "website": "https://locations.kfc.com",
+            "logo": "https://1000logos.net/wp-content/uploads/2017/03/Kfc_logo.png",
+            "membership_level": "No fee",
+            "other_information": "No additional membership benefits for this business."
+        },
+        {
+            "name": "McDonald",
+            "type": "Entertainment",
+            "location": {
+                "address1": "83 Front Street, San Pablo, CA 94806",
+                "city": "Los Angeles",
+                "state": "CA",
+                "zip_code": "90002"
+            },
+            "phone": "+1-202-555-0123",
+            "website": "https://www.mcdonalds.com/",
+            "logo": "https://www.marketing-professionnel.fr/wp-content/uploads/2019/04/marque-puissante-creation-valeur-mc-donald.png",
+            "membership_level": "Bronze",
+            "other_information": {
+                "Monthly Fee": "$100",
+                "Eligibility": "For-profit companies with less than 50 workers",
+                "Benefits": [
+                    "30% discount on events",
+                    "30% discount for advertisement",
+                    "100% commission for referrals"
+                ]
+            }
+        },
+        {
+            "name": "Plumas bank",
+            "type": "Banking",
+            "location": {
+                "address1": "336 Main St",
+                "city": "Quincy",
+                "state": "CA",
+                "zip_code": "95971"
+            },
+            "phone": "123-456-7890",
+            "website": "https://www.plumasbank.com/",
+            "logo": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR42_4W9f7TRW0nm1X7C-JMSnlDS3HCx-T5Mnuui0xvhnALgWpcIJ9mjt1qCxh2T9trlNA&usqp=CAU",
+            "membership_level": "Silver",
+            "other_information": {
+                "Monthly Fee": "$150",
+                "Eligibility": "For-profit companies with fewer than 250 workers",
+                "Benefits": [
+                    "60% discount on events",
+                    "60% discount on advertising",
+                    "100% commission for referrals",
+                    "Free transactions between members"
+                ]
+            }
+        },
+        {
+            "name": "Barbershopca",
+            "type": "Hair & Style",
+            "location": {
+                "address1": "487 Yellow Street",
+                "city": "San Diego",
+                "state": "CA",
+                "zip_code": "11301"
+            },
+            "phone": "+1-193-251-1290",
+            "website": "https://www.thebarbershopca.com/",
+            "logo": "https://images.squarespace-cdn.com/content/v1/592cb291f5e2311557e77f88/1544659764816-5DMUNPZUM0TJ3K9LT7V1/TBS+Logo+Website+4.png?format=1500wp",
+            "membership_level": "No fee",
+            "other_information": "No additional membership benefits for this business."
+        },
+        {
+            "name": "Walmart",
+            "type": "Shopping & Grooming",
+            "location": {
+                "address1": "4 Lead Street",
+                "city": "Quincy",
+                "state": "CA",
+                "zip_code": "95971"
+            },
+            "phone": "+1-223-102-3521",
+            "website": "https://www.walmart.com",
+            "logo": "https://cdn.mos.cms.futurecdn.net/5StAbRHLA4ZdyzQZVivm2c.jpg",
+            "membership_level": "Gold",
+            "other_information": {
+                "Monthly Fee": "$250",
+                "Eligibility": "For-profit companies with more than 250 employees",
+                "Benefits": [
+                    "80% off tickets to events",
+                    "Free attendance at the trade show",
+                    "100% commission for referrals",
+                    "5 featured ads per year",
+                    "Free transactions between members",
+                    "1 free training per quarter"
+                ]
+            }
+        },
+        {
+            "name": "Dominos Pizza",
+            "type": "Food & Restaurant",
+            "location": {
+                "address1": "17 Beeryfield Street",
+                "city": "Quincy",
+                "state": "CA",
+                "zip_code": "95971"
+            },
+            "phone": "+1-202-555-0144",
+            "website": "https://www.dominos.com/",
+            "logo": "https://i.insider.com/501fde6feab8ea876c000002?width=700",
+            "membership_level": "No fee",
+            "other_information": "No additional membership benefits for this business."
+        },
+        {
+            "name": "PepsiCo",
+            "type": "US Industry Food & Drink",
+            "location": {
+                "address1": "200 Nike Road",
+                "city": "Los Angeles",
+                "state": "CA",
+                "zip_code": "11301"
+            },
+            "phone": "+1-202-555-0115",
+            "website": "https://www.pepsico.com/",
+            "logo": "https://viterbicareers.usc.edu/wp-content/uploads/2020/09/pepsico-logo.jpg",
+            "membership_level": "No fee",
+            "other_information": "No additional membership benefits for this business."
+        },
+        {
+            "name": "Mediexcel Health Care",
+            "type": "Public Services Healthcare",
+            "location": {
+                "address1": "21 Bridges Street",
+                "city": "Quincy",
+                "state": "CA",
+                "zip_code": "95971"
+            },
+            "phone": "+1-202-555-0186",
+            "website": "https://www.mediexcel.com/",
+            "logo": "data:image/png;base64,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",
+            "membership_level": "Nonprofit",
+            "other_information": "No additional membership benefits for this business."
+        },
+        {
+            "name": "Bank Of America",
+            "type": "Banking Services",
+            "location": {
+                "address1": "Old Town Road Midway",
+                "city": "Quincy",
+                "state": "CA",
+                "zip_code": "95971"
+            },
+            "phone": "+1-202-555-0123",
+            "website": "https://www.bankofamerica.com/",
+            "logo": "https://logos-marques.com/wp-content/uploads/2021/07/Bank-of-America-logo.png",
+            "membership_level": "No fee",
+            "other_information": "No additional membership benefits for this business."
+        }
+    ]
+}

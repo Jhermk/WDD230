@@ -100,4 +100,15 @@
         gap: 40px;
     }
 
+    /* Directory */
+    .directory {
+        margin-right: 15px;
+    }
+
+    .directory .displayItems ul li:hover {
+        color: #ff5733;
+        transform: scale(1.1);
+
+    }
+
 }
