@@ -440,6 +440,7 @@ input[type="submit"]:hover {
     flex-wrap: wrap;
     text-align: center;
     justify-content: center;
+    color: #000;
 
 }
 
