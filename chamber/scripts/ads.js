@@ -1,4 +1,4 @@
-const requestURL = '/wdd230/chamber/data/members.json';
+const requestURL = 'https://jhermk.github.io/wdd230/chamber/data/members.json';
 
 // Function to create a member advertisement
 function createMemberAd(member) {
