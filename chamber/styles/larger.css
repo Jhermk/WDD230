@@ -120,16 +120,16 @@
     }
 
     .form-container {
-        padding: 40px;
+        padding: 30px;
 
     }
 
     .board-container {
-        gap: 40px;
+        gap: 5px;
     }
 
     .board-member-info {
-        padding: 40px;
+        padding: 30px;
     }
 
     .footer-flex {

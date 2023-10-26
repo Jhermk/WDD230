@@ -779,15 +779,10 @@ footer p {
 
 /* contact page */
 
-.contact-container {
-    padding: 40px;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 40px;
-}
+
 
 #submit-button {
-    background-color: rgb(211, 57, 57);
+    background-color: #000;
     color: #fff;
     padding: 10px 20px;
     border: none;
@@ -799,19 +794,28 @@ footer p {
     background-color: #9c2c13;
 }
 
+.upper {
+    text-transform: uppercase;
+    padding: 0 40px;
+
+}
+
 .board-container {
     flex: 1;
     display: flex;
     flex-wrap: wrap;
-    padding: 40px;
+    margin: 5px;
 
 }
+
 
 .board-member-info {
     flex: 1;
     padding: 20px;
-    background-color: #f4f4f4;
     border-radius: 8px;
+    margin: 20px;
+    border: 1px solid #CCC;
+
 }
 
 
