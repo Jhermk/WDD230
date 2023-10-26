@@ -779,6 +779,13 @@ footer p {
 
 /* contact page */
 
+.contact-container {
+    padding: 40px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 40px;
+}
+
 #submit-button {
     background-color: rgb(211, 57, 57);
     color: #fff;
