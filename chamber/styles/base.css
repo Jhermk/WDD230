@@ -327,7 +327,7 @@ nav ul>li:first-child a {
 }
 
 .spotlight1 {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/chamber/images/united-people.webp');
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/wdd230/chamber/images/united-people.webp');
     background-position: center;
     background-size: cover;
     background-position: center;
@@ -338,7 +338,7 @@ nav ul>li:first-child a {
 }
 
 .spotlight2 {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/chamber/images/building.webp');
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/wdd230/chamber/images/building.webp');
     background-position: center;
     background-size: cover;
     background-position: center;
@@ -349,7 +349,7 @@ nav ul>li:first-child a {
 }
 
 .spotlight3 {
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/chamber/images/zoom.webp');
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('/wdd230/chamber/images/zoom.webp');
     background-position: center;
     background-size: cover;
     background-position: center;
