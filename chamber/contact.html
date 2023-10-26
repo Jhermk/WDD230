@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Hermann F. J Koffi">
     <meta name="description"
-        content="Welcome to the Official Website of the Sacramento Chamber of Commerce | Directory Page">
+        content="Welcome on board to the Official Website of the Sacramento Chamber of commerce website | Contact page">
     <meta property="og:title" content="Sacramento Chamber of Commerce">
     <meta property="og:description"
         content="Connecting businesses and fostering growth in our community. Join us today!">
@@ -14,7 +14,7 @@
     <meta property="og:image"
         content="https://upload.wikimedia.org/wikipedia/commons/4/48/United_States_Chamber_of_Commerce_Building.jpg">
     <meta property="og:url" content="https://sacramentochamber.com/">
-    <title>Sacramento Chamber of Commerce | Directory Page</title>
+    <title>Sacramento Chamber of Commerce | Contact Page</title>
     <link rel="stylesheet" href="/wdd230/chamber/styles/normalize.css">
     <link rel="stylesheet" href="/wdd230/chamber/styles/base.css">
     <link rel="stylesheet" href="/wdd230/chamber/styles/larger.css">
@@ -29,7 +29,7 @@
 <body>
     <header>
         <div class="header">
-            <h1>Sacramento Chamber of Commerce<br>Empowering Business Growth</h1>
+            <h1>Sacramento Chamber of Commerce <br> Empowering Business Growth</h1>
             <a id="menu" href="#"></a>
         </div>
     </header>
@@ -38,21 +38,62 @@
         <ul class="navigation">
             <li><a href="/wdd230/chamber/index.html">Home</a></li>
             <li><a href="/wdd230/chamber/discover.html">Discover</a></li>
-            <li><a href="#">Directory</a></li>
+            <li><a href="/wdd230/chamber/directory.html">Directory</a></li>
             <li><a href="/wdd230/chamber/join.html">Join</a></li>
-            <li><a href="/wdd230/chamber/contact.html">Contact</a></li>
+            <li><a href="#">Contact</a></li>
         </ul>
     </nav>
-    <main class="directory">
-        <div class="icons">
-            <button id="grid"><img src="/wdd230/chamber/images/grid.svg" alt="Grid View Icon"></button>
-            <button id="list"><img src="/wdd230/chamber/images/list.svg" alt="List View Icon"></button>
+    <main class="contact-container">
+        <div class="form-container">
+            <form action="/wdd230/chamber/thanks.html" method="GET" autocomplete="on">
+                <h1>Contact Us</h1>
+                <label for="name">
+                    *Name
+                    <input type="text" id="name" name="name" required>
+                </label>
+
+                <label for="email">
+                    *Email
+                    <input type="email" id="email" name="email" required>
+                </label>
+
+                <label for="message">
+                    Message
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                </label>
+
+                <input type="submit" id="submit-button" value="Submit">
+            </form>
         </div>
-        <div class="displayItems">
-            <div class="cards"></div>
-            <table class="table"></table>
+
+        <div class="board-container">
+            <div class="board-member-info">
+                <h2>Boris Becker</h2>
+                <p>President</p>
+                <p>123-456-228</p>
+                <p>beckerboris@gmail.com</p>
+            </div>
+            <div class="board-member-info">
+                <h2>Julia Smith</h2>
+                <p>Vice President</p>
+                <p>123-456-228</p>
+                <p>julianasmith@gmail.com</p>
+            </div>
+            <div class="board-member-info">
+                <h2>De La Cruz Maria</h2>
+                <p>Counselor</p>
+                <p>121-290-9022</p>
+                <p>mariadelacruz@gmail.com</p>
+            </div>
+            <div class="board-member-info">
+                <h2>John Smith</h2>
+                <p>Counselor</p>
+                <p>221-190-1022</p>
+                <p>josmith@gmail.com</p>
+            </div>
         </div>
     </main>
+
     <footer class="footer-flex">
         <p>&copy; <span id="year"></span> | Sacramento Chamber of Commerce | WDD230 Hermann F. J Koffi</p>
         <h3>Contact: (801) 601-3210 | xyz@gmail.com</h3>
@@ -61,9 +102,9 @@
         <a href="/wdd230/chamber/index.html"><img class="logo" src="/wdd230/chamber/images/logo.webp"
                 alt="Logo png"></a>
     </footer>
+
     <script defer src="/wdd230/chamber/scripts/getDates.js"></script>
     <script defer src="/wdd230/chamber/scripts/hamburger.js"></script>
-    <script src="/wdd230/chamber/scripts/directory.js"></script>
 </body>
 
 </html>

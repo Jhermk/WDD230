@@ -1,23 +1,19 @@
-// Get references to modal elements
-let modal = document.getElementById('modal');
-let closeModalBtn = document.getElementById('closeModalBtn');
-
-// Function to close the modal
-function closeModal() {
-    modal.style.display = 'none';
+// Function to hide the banner
+function hideBanner() {
+    document.getElementById("banner").style.display = "none";
 }
 
-// Event listener to close the modal when the "×" button is clicked
-closeModalBtn.addEventListener('click', closeModal);
+// Function to check if it's Monday, Tuesday, or Wednesday and show the banner
+function showBanner() {
+    let today = new Date();
+    let dayOfWeek = today.getDay(); // 0 for Sunday, 1 for Monday, and so on
 
-// Close the modal if the user clicks outside of it
-window.addEventListener('click', (event) => {
-    if (event.target === modal) {
-        closeModal();
+    if (dayOfWeek >= 1 && dayOfWeek <= 3) { // Monday, Tuesday, or Wednesday
+        document.getElementById("banner").style.display = "block";
+    } else {
+        document.getElementById("banner").style.display = "none";
     }
-});
+}
 
-// Automatically open the modal when the page loads
-window.addEventListener('load', () => {
-    modal.style.display = 'block';
-});
+// Call the showBanner function when the page loads
+window.onload = showBanner();

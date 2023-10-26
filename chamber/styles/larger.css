@@ -1,5 +1,4 @@
-@media screen and (min-width: 600px) {
-
+@media screen and (min-width: 800px) {
     .logo {
         width: 250px;
         height: auto;
@@ -57,13 +56,14 @@
         grid-row: 1/2;
     }
 
+
     .weather {
-        grid-column: 1/2;
-        grid-row: 2/3;
+        grid-column: 1/5;
+        grid-row: 3/3;
     }
 
     .news {
-        grid-column: 2/4;
+        grid-column: 1/5;
         grid-row: 2/3;
     }
 
@@ -77,7 +77,7 @@
     .spotlight3 {
         border: 1px dotted #CCC;
         max-width: 300px;
-        height: 20vh;
+        height: 50vh;
         margin: 10px;
     }
 
@@ -109,6 +109,32 @@
         color: #ff5733;
         transform: scale(1.1);
 
+    }
+
+    /* contact page */
+    .contact-container {
+        padding: 40px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 40px;
+    }
+
+    .form-container {
+        padding: 40px;
+
+    }
+
+    .board-container {
+        gap: 40px;
+    }
+
+    .board-member-info {
+        padding: 40px;
+    }
+
+    .footer-flex {
+        display: flex;
+        flex-direction: column;
     }
 
 }

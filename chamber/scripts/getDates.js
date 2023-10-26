@@ -41,4 +41,3 @@ let lastModifiedDateStr = "Last modified: " + lastModifiedDate.toLocaleDateStrin
 document.getElementById("lastModified").textContent = lastModifiedDateStr;
 
 
-

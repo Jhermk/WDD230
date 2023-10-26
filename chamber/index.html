@@ -24,24 +24,23 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&family=Roboto+Serif:opsz,wght@8..144,200&display=swap"
         rel="stylesheet">
+
 </head>
 
 <body>
     <header>
-        <div id="modal" class="modal">
-            <div class="modal-content">
-                <span class="close-btn" id="closeModalBtn">&times;</span>
-                <h2>Come Join Us!</h2>
-                <p>Join our live meeting on Tuesday or Wednesday.</p>
+        <div class="banner" id="banner">
+            <div class="banner-content">
+                <div class="banner-text">
+                    <button type="button" class="banner-button" onclick="hideBanner()"><i
+                            class="fa-solid">❌</i></button>
+                    <p>Come attend the chamber meet and greet Wednesday at 7:00 p.m.</p>
+                </div>
             </div>
         </div>
         <div class="header">
             <h1>Sacramento Chamber of Commerce <br> Empowering Business Growth</h1>
             <a id="menu" href="#"></a>
-            <div id="mode">
-                ☑️
-            </div>
-
         </div>
     </header>
     <p id="date"></p>
@@ -51,51 +50,134 @@
             <li><a href="/wdd230/chamber/discover.html">Discover</a></li>
             <li><a href="/wdd230/chamber/directory.html">Directory</a></li>
             <li><a href="/wdd230/chamber/join.html">Join</a></li>
-            <li><a href="#">Contact</a></li>
+            <li><a href="/wdd230/chamber/contact.html">Contact</a></li>
         </ul>
     </nav>
     <main>
         <div class="wrapper">
             <div class="event">
-                <div class="event-time">
-                    <span class="day">Monday</span>
-                    <span class="date">October 3</span>
-                    <span class="time">2:00 PM - 4:00 PM</span>
-                </div>
                 <div class="event-details">
-                    <h2 class="event-title">Team Meeting</h2>
-                    <p class="event-description">Discuss project updates and plan for the week.</p>
-                    <p class="event-location">Location: Conference Room 1</p>
+                    <div class="meeting">
+                        <h2 class="event-title">Virtual Garthering</h2>
+                        <p class="event-description">Discuss project updates and plan for the week.</p>
+                        <p class="event-location">Zoom_Conference Room 1 : <a href="https://zoom.us">Click here</a></p>
+                    </div>
+                    <h3>Members spotlightAds</h3>
+                    <div id="spotlightAds">
+                        <!-- Advertisements here -->
+                    </div>
                 </div>
             </div>
             <div class="hero">
-                <button>JOIN US NOW</button>
+                <div class="hero-content">
+                    <picture>
+                        <source srcset="/wdd230/chamber/images/hero-small.webp" media="(max-width: 400px)">
+                        <source srcset="/wdd230/chamber/images/hero-large.webp" media="(max-width: 600px)">
+                        <img loading="lazy" src="/wdd230/chamber/images/hero-large.webp" alt="hero image" width="1500"
+                            height="750">
+                    </picture>
+                    <div class="overlay">
+                        <a href="/wdd230/chamber/join.html">Join Now</a>
+                    </div>
+                </div>
             </div>
-            <div class="weather">Weather</div>
-            <div class="news">News</div>
-            <section class="spotlight">
-                <h3>Spotlight</h3>
-                <div class="spotlight1">Spotlight 1</div>
-                <div class="spotlight2">Spotlight 2</div>
-                <div class="spotlight3">Spotlight 3</div>
+            <div class="weather">
+                <div class="weather">
+                    <h2>Sacramento Current Weather</h2>
+                    <div class="weather-card">
+                        <div class="temperature">Temperature: <span id="current-temp"></span></div>
+                        <div class="weather-icon"><img id="weather-icon" src="" alt="Weather Icon"></div>
+                        <div class="weather-description">Condition: <span id="weather-description"></span></div>
+                    </div>
+                </div>
+                <div class="three-day-forecast">
+                    <h2>Three-Day Forecast</h2>
+                    <div id="three-day-forecast-container">
+                        <!-- Three-day forecast  -->
+                    </div>
+                </div>
+
+            </div>
+            <div class="news">
+                <h2>Latest News</h2>
+                <div class="column">
+                    <div class="info">
+                        Sacramento Assembly passed a bill to reduce greenhouse gas emissions with a goal of
+                        carbon
+                        neutrality by 2045, requiring large polluters to transition to renewable energy.
+                        Environmental
+                        groups support the move as a crucial step in the fight against climate change. <a
+                            class="see-more" href="#">See More</a>
+                    </div>
+                    <div class="info">
+                        A study by UC Berkeley found Sacramento's housing crisis is worsening, with a lack of
+                        affordable
+                        homes for low- and middle-income residents. Solutions include increasing funding for housing
+                        development and implementing rent control measures. <a class="see-more" href="#">See
+                            More</a>
+                    </div>
+                    <div class="info">
+                        Sacramento's mayor Gavin Newsom has proposed a $100 billion stimulus package for COVID-19
+                        recovery with funds for small businesses, workforce development, and infrastructure projects
+                        to
+                        create jobs and boost the state's economy. <a class="see-more" href="#">See More</a>
+                    </div>
+                </div>
+            </div>
+            <section id="spotlight">
+                <div class="spotlight1">
+                    <h3>Together we Grow</h3><a class="read" href="#">learn-more</a>
+                </div>
+                <div class="spotlight2">
+                    <h3>Our Headquaters offices</h3><a class="read" href="#">learn-more</a>
+                </div>
+                <div class="spotlight3">
+                    <h3>Hosted Zoom meeting</h3><a class="read" href="#">learn-more</a>
+
+                </div>
+
             </section>
 
         </div>
 
+
+
+        <div class="subscription">
+            <h3>Subscribe to our Newsletter</h3>
+            <div class="newsletter">
+                <h2>Newsletter</h2>
+                <form action="/wdd230/chamber/thanks.html">
+                    <label for="email">Subscribe </label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+                <p>Stay up-to-date with the latest trends and special offers!</p>
+            </div>
+        </div>
+        <div id="map-container">
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d199665.90719799872!2d-121.62624244087469!3d38.56188689363072!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809ac672b28397f9%3A0x921f6aaa74197fdb!2sSacramento%2C%20CA%2C%20USA!5e0!3m2!1sen!2sci!4v1698203686672!5m2!1sen!2sci"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+
     </main>
-    <footer>
-        <p>&copy; <span id="year"></span> | Sacramento Chamber of Commerce <br> Contact: (801) 601-3210 | Email:
-            Sacramentochamb@gmail.com <br> Location: 2479 Riverwood Drive Sacramento CA <br> WDD230 Hermann F. J Koffi
-        </p>
-        <p id="lastModified"></p>
-        <a href="/wdd230/wdd230/chamber/index.html"><img class="logo" src="/wdd230/chamber/images/logo.webp"
+    <footer class="footer-flex">
+        <p>&copy; <span id="year"></span> | Sacramento Chamber of Commerce | WDD230 Hermann F. J Koffi</p>
+        <h3>Contact: (801) 601-3210 | xyz@gmail.com</h3>
+        <h4>Location: 2479 Riverwood Drive Sacramento CA </h4>
+        <h5 id="lastModified"></h5>
+        <a href="/wdd230/chamber/index.html"><img class="logo" src="/wdd230/chamber/images/logo.webp"
                 alt="Logo png"></a>
     </footer>
+
 
     <script defer src="/wdd230/chamber/scripts/getDates.js"></script>
     <script defer src="/wdd230/chamber/scripts/hamburger.js"></script>
     <script defer src="/wdd230/chamber/scripts/modal.js"></script>
-    <script defer src="/wdd230/chamber/scripts/dark.js"></script>
+    <script defer src="/wdd230/chamber/scripts/weather.Js"></script>
+    <script defer src="/wdd230/chamber/scripts/news.js"></script>
+    <script defer src="/wdd230/chamber/scripts/ads.js"></script>
 </body>
 
 </html>
